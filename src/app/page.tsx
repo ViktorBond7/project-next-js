@@ -1,12 +1,11 @@
-import ActiveLabel from "./components/status-label";
-import NotActiveLabel from "./components/not-active-label";
+import AddCompanyButton from "./components/add-company-button";
+import StatusLabel, { Status } from "./components/status-label";
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-xl">Home Page</h1>
-      <ActiveLabel>Active</ActiveLabel>
-      <NotActiveLabel>Not Active</NotActiveLabel>
+      <h1 className="text-xl">Home page {new Date().toTimeString()}</h1>
+      <AddCompanyButton />
     </main>
   );
 }
