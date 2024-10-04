@@ -2,10 +2,12 @@
 import React from "react";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import Image from "next/image";
+
 export interface LogoUploaderProps
   extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "type"> {
   label?: string;
 }
+
 export default function LogoUploader({
   label,
   placeholder,
